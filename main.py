@@ -1,5 +1,6 @@
-from _datetime import datetime
-from operations import get_operation, get_sorted_state, get_sorted_date, get_five_operations
+from datetime import datetime
+from utils import get_operation, get_sorted_state, get_sorted_date, get_five_operations
+
 def main():
     operations = get_operation()
     sorted_state = get_sorted_state(operations)
