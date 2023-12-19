@@ -1,3 +1,4 @@
+# Импорты для прораммы
 from datetime import datetime
 from utils import get_operation, get_sorted_state, get_sorted_date, get_five_operations
 
@@ -16,6 +17,10 @@ def main():
             print(f'{datetime.fromisoformat(operation["date"]).strftime("%d.%m.%Y")} {operation["description"]}\n{to[0]} **{to[1][-4:]}\n{operation["operationAmount"]["amount"]} {operation["operationAmount"]["currency"]["name"]}\n')
         else:
             print(f'{datetime.fromisoformat(operation["date"]).strftime("%d.%m.%Y")} {operation["description"]}\n{requisites[0]} {requisites[1][0:4]}** **** {requisites[1][-4:]} -> {to[0]} **{to[1][-4:]}\n{operation["operationAmount"]["amount"]} {operation["operationAmount"]["currency"]["name"]}\n')
+"""
+Основная функция
+"""
 
 main()
 
+########################################
