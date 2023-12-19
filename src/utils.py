@@ -5,7 +5,7 @@ import json
 
 
 def get_operation():
-    file_path = os.path.abspath("src/operations.json")
+    file_path = os.path.abspath("operations.json")
     with open(file_path, encoding="utf-8") as file:
         operation_json = file.read()
         operation = json.loads(operation_json)
